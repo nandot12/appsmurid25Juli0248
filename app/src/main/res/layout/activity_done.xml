@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/putih"
+    tools:context=".DoneActivity">
+
+    <TextView
+
+        android:id="@+id/satu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Mohon Melakukan Pembayaran, transfer"
+        android:textColor="@color/merah"
+        android:layout_marginBottom="10dp"
+        android:textSize="18dp"
+
+        />
+    <ImageView
+        android:id="@+id/dua"
+        android:layout_below="@+id/satu"
+        android:layout_width="2000dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/mandirii" />
+
+    <TextView
+        android:id="@+id/tiga"
+        android:layout_below="@+id/dua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="No Rekening : 171-00-0487459-3"
+        android:textColor="@color/hitam"
+        android:textSize="18dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/empat"
+        android:layout_below="@+id/tiga"
+        android:layout_marginRight="10dp"
+        android:text="Atas Nama : Safira Kumala Sari"
+        android:textColor="@color/hitam"
+        android:textSize="18dp" />
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/lima"
+        android:gravity="center"
+        android:layout_below="@+id/empat"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="15dp"
+        android:text="Kirim Bukti Pembayaran lewat 'Chat' yang tersedia di Aplikasi"
+        android:textColor="@color/pink"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lima"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:text="Terimakasih, Petugas Kami akan Menghubungi Anda lewat Chat di Aplikasi"
+        android:textColor="@color/backgroud_item"
+        android:textSize="18dp"
+
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pink"
+
+            android:orientation="vertical"
+
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:id="@+id/GambarDokter"
+                android:src="@drawable/payment2" />
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="dr umum - Periksa dan Resep"
+                android:id="@+id/detailpesanan"
+                android:textColor="@color/putih"
+                android:gravity="fill"
+                android:layout_toRightOf="@+id/GambarDokter"
+                android:layout_toEndOf="@+id/GambarDokter" />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="dr umum - Periksa dan Resep"
+                android:gravity="fill"
+                android:id="@+id/detailharga"
+                android:textColor="@color/putih"
+                android:layout_below="@+id/detailpesanan"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/GambarDokter"
+                android:layout_toEndOf="@+id/GambarDokter" />
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

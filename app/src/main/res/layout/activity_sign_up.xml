@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/regName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:hint="Nama Lengkap"
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/abu" />
+
+                <EditText
+                    android:id="@+id/regEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:hint="Email"
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/abu" />
+
+                <EditText
+                    android:id="@+id/regHp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:hint="No HP"
+                    android:inputType="phone"
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/abu" />
+
+                <EditText
+                    android:id="@+id/regJk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:hint="Jenis Kelamin"
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/abu" />
+
+                <EditText
+                    android:id="@+id/regPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/abu" />
+
+                <EditText
+                    android:id="@+id/regConfirmPas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:hint="Password Konfirmasi"
+                    android:inputType="textPassword"
+                    android:textColor="@color/hitam"
+                    android:textColorHint="@color/abu" />
+                <EditText
+                    android:id="@+id/regAlamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Alamat Lengkap"
+                    android:gravity="center"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+
+                    android:textColorHint="@color/abu"
+                    android:textColor="@color/hitam" />
+                <EditText
+                    android:id="@+id/regKota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Kota / Kabupaten"
+                    android:gravity="center"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+
+                    android:textColorHint="@color/abu"
+                    android:textColor="@color/hitam" />
+
+
+
+
+                <TextView
+                    android:id="@+id/cb_fisika"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/cb_ipa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/cb_mtk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="" />
+
+
+                <Button
+                    android:id="@+id/regbtnSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/loginPassword"
+                    android:layout_marginLeft="40dp"
+
+                    android:layout_marginRight="40dp"
+                    android:background="@color/pink"
+                    android:text="DAFTAR"
+                    android:textColor="@color/putih" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/linkLogin"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/hitam"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Sudah Punya Akun ? MASUK"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

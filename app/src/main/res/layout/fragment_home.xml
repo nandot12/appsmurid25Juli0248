@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomeFragment">
+
+    <FrameLayout
+        android:id="@+id/frameDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        tools:ignore="InvalidId">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Aktifkan Internet dan GPS Lokasi"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/merah"/>
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_below="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Pelayanan Pukul 5.00 - 22.00"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/hitam"/>
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_below="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Belajar privat / kelompok maks 3 orang, harga sama (90 menit)"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16sp"
+                    android:background="@color/pink"
+                    android:gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/putih"/>
+                <ViewFlipper
+                    android:id="@+id/flipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_margin="2dp"
+                    android:background="#f6f1f1" />
+
+                <TextView
+                    android:id="@+id/txtRunning"
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:background="@color/putih"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff"
+
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/paketrecyelrview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+
+
