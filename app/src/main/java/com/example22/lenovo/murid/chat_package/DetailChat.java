@@ -297,7 +297,7 @@ public class DetailChat extends AppCompatActivity {
 
                                     Map<String, String> map = new HashMap<String, String>();
                                     map.put("message", messageArea.getText().toString());
-                                    map.put("username", UserDetails.username);
+                                    map.put("username",sessionManager.getNama());
                                     map.put("imageschat", upload.getImgUrl());
                                     reference1.push().setValue(map);
                                     reference2.push().setValue(map);
